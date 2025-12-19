@@ -103,13 +103,13 @@ body{
     border-radius: 15px;
 }
 
-#thecraftedone{
+#meenlogo{
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-#thecraftedone img{
+#meenlogo img{
     height:60px;
     border: solid black 5px;
 }

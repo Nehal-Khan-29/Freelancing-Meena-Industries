@@ -33,7 +33,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    #menuToggle, #Srikanth_Name{
+    #menuToggle{
         display: inline;
     }
     .menubar li {
@@ -181,55 +181,6 @@
     }
 }
 
-/*------------------------------------------------wbu----------------------------------------------------------*/
-
-
-@media only screen and (max-width: 1400px){
-
-    .problems{
-        margin-top: 150px;
-        flex-direction: column;
-    }
-
-}
-
-@media only screen and (max-width: 800px){
-
-
-    .prob_photo_0 {
-        position: absolute; 
-        width: 90px;
-        border: 5px solid black;
-    }
-
-    .prob_photo_1{
-        height: 300px;
-    }
-
-    @keyframes drop {
-    0% {
-        transform: translate(40px, -50px) rotate(13deg);
-    }
-    100% {
-        transform: translate(40px, 15px) rotate(13deg);
-    }
-}
-
-}
-
-
-@media only screen and (max-width: 600px){
-
-    .problems ul{
-        text-align: left;
-        font-size: medium;
-        width: 300px;
-        color: rgb(55, 56, 57);
-        list-style-type: square;
-        line-height: 1.5;
-    }    
-
-}
 
 /*------------------------------------------------Services----------------------------------------------------------*/
 
