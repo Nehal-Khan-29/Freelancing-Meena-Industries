@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Sofia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*========================================================= Scroll bar =========================================================*/
+
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 119, 0); 
+}
+
+/*========================================================= Body =========================================================*/
+
+body{
+    height: auto;
+    overflow-x: hidden;
+}
+
+.home_container, .about_container , .services_container, .reviews_container{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    margin:  0 auto;
+    background-color: black;
+    padding: 50px;
+}
+
+.contact_container{
+    padding: 50px;
+    min-height: 80vh;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    z-index: 10;
+    max-width: 90%;
+    margin:  0 auto;
+}
+
+.headers{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-style: italic;
+    border: dashed 5px orange;
+    width: fit-content;
+    padding: 10px;
+}
+
+/*===================================================== Navigation Bar =====================================================*/
+
+.menubar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    text-align: right;
+    transition: top 0.3s;
+    display: block;
+    background-color: black;
+    z-index: 999;
+}
+
+.menubar li, .menubar a{
+    display:inline;
+    color: white;
+    padding: 10px;
+}
+
+.menubar li a:hover {
+    color: orange;
+    transition:0.3s ease;
+    border-radius: 15px;
+}
+
+#thecraftedone{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#thecraftedone img{
+    height:60px;
+    border: solid black 5px;
+}
+
+/*===================================================== Home ===========================================================================*/
+
+.home{
+    background-image: url("assets/img/gearChain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home_container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.welcome_text1{
+    text-align: left;
+    max-width: 550px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.welcome_text2{
+    margin-top: 25px;
+    text-align: left;
+    width: 550px;
+    font-size: 22px;
+}
+
+.homecontact{
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.homecontact a{
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+/*===================================================== About ===========================================================================*/
+
+.abt_me{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.abt_me_1{
+    align-content: center;
+    font-size: medium;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.abt_me_1 div{
+    margin-bottom: 15px;
+}
+
+.abt_me_2{
+    height: 250px;
+    width: auto;
+}
+
+/*===================================================== Services ===========================================================================*/
+
+.services_container{
+    background-color: rgb(250, 228, 199);
+}
+
+.abt_services_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-info{
+    color: rgb(255, 115, 0);
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.serviceimg{
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+}
+
+/*===================================================== reviews ===========================================================================*/
+
+.reviews_container{
+    background-color: white;
+}
+
+.abt_rev_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.abt_rev div{
+    margin-bottom: 15px;
+}
+
+
+.product-info2{
+    color: black;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: black 2px 2px 15px;
+
+}
+
+.revimg{
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+}
+
+/*===================================================== contact ===========================================================================*/
+
+.letsconnect{
+    color: #75a2fd;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.contactmain{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.con_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.con_container div{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.con_container .fas{
+    gap: 10px;
+    padding: 10px;
+    color:white;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.contact-form-div{
+    display: flex;
+    flex-direction:unset;
+    position: relative;
+    justify-content: space-around;
+  }
+
+.contact-form {
+    border-collapse: separate;
+    border-spacing: 20px; 
+}
+
+input,textarea{
+    border-radius: 30px;
+    border: 0px;
+    padding-left:20px ;
+    height: 40px;
+    font-size: medium;
+    font-weight: 900;
+    width: 300px;
+    background-color: orange;
+    color: black;
+}
+
+textarea{
+    height:150px;
+    padding-top: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(24, 38, 53, 0.4);
+    font-style: italic;
+}
+
+.btn-md{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 900;
+    border: none;
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+.btn-md:hover{
+    background-color: black;
+    border: 2px solid orange;
+    color: orange;
+    transition: 0.5s ease;
+}
+
+.contact_container2{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: grey;
+}
+
+.footertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 10px;
+}
+
+.footertext img{
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.map-container {
+      width: 400px;
+      height: 400px;
+      border: solid black 5px;
+    }
+
+/*========================================================= All transition =============================================================*/
+
+@keyframes BodyslideInFromTop {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+}
+  
+.slide-in {
+    animation: BodyslideInFromTop 0.8s ease-in-out;
+}
+
+@keyframes bigzoom {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+    transform: scale(1);
+    }
+}
+  
+.slide-in2 {
+    animation: bigzoom 0.8s ease-in-out;
+}
