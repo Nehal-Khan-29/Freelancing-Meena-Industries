@@ -78,3 +78,13 @@ function isInViewport(element) {
   
   window.addEventListener('scroll', handleScroll);
   window.addEventListener('load', handleScroll);
+
+
+function prependSubject() {
+  const subjectInput = document.getElementById("subject");
+  const prefix = "Meena Industries: ";
+
+  if (!subjectInput.value.startsWith(prefix)) {
+    subjectInput.value = prefix + subjectInput.value;
+  }
+}
