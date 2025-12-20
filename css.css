@@ -137,7 +137,6 @@ body{
 
 .welcome_text1{
     text-align: left;
-    max-width: 550px;
     font-weight: bold;
     font-size: 48px;
 }
@@ -145,8 +144,7 @@ body{
 .welcome_text2{
     margin-top: 25px;
     text-align: left;
-    width: 550px;
-    font-size: 22px;
+    font-size: medium;
 }
 
 .homecontact{
@@ -160,6 +158,11 @@ body{
     font-weight: bold;
     color: white;
     text-decoration: underline;
+}
+
+.spanner i{
+    font-size: 108px;
+    color: orange;
 }
 
 /*===================================================== About ===========================================================================*/
@@ -185,6 +188,7 @@ body{
 .abt_me_2{
     height: 250px;
     width: auto;
+    border-radius: 20px;
 }
 
 /*===================================================== Services ===========================================================================*/
@@ -240,7 +244,7 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    box-shadow: black 2px 2px 15px;
+    box-shadow: black 2px 2px 10px;
 
 }
 
