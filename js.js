@@ -50,3 +50,31 @@ function togglecheck() {
 
   
 
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.bottom <= 0 || 
+      rect.top >= window.innerHeight || 
+      rect.right <= 0 || 
+      rect.left >= window.innerWidth
+    );
+  }
+  
+  function handleScroll() {
+    const elements = document.querySelectorAll('.abt_me_2, .serviceimg, .revimg, .map-container');
+
+    elements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('zoomanimation');
+        element.classList.remove('zoomanimation');
+        element.style.visibility = 'visible';
+      } else {
+        element.classList.remove('zoomanimation');
+        element.classList.add('zoomanimation');
+      }
+    });
+
+  }
+  
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('load', handleScroll);

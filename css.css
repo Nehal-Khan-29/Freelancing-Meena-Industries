@@ -110,6 +110,7 @@ body{
 }
 
 #meenlogo img{
+    margin-top: 10px;
     height:60px;
     border: solid black 5px;
 }
@@ -163,6 +164,16 @@ body{
 .spanner i{
     font-size: 108px;
     color: orange;
+    animation: spannershake 0.35s infinite alternate;
+}
+
+@keyframes spannershake {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
 }
 
 /*===================================================== About ===========================================================================*/
@@ -373,6 +384,7 @@ input::placeholder, textarea::placeholder {
 
 /*========================================================= All transition =============================================================*/
 
+
 @keyframes BodyslideInFromTop {
     from {
       opacity: 0;
@@ -392,13 +404,13 @@ input::placeholder, textarea::placeholder {
 
 @keyframes bigzoom {
     from {
-      transform: scale(0.5);
+      transform: scale(0.75);
     }
     to {
     transform: scale(1);
     }
 }
   
-.slide-in2 {
-    animation: bigzoom 0.8s ease-in-out;
+.zoomanimation {
+    animation: bigzoom 0.5s ease-in-out;
 }
